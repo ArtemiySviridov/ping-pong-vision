@@ -92,11 +92,19 @@ export const usePlayerStore = create<PlayerState>()(
       }
     },
 
-    fetchPlayerProfileMatches: async (page: number, limit: number) => {
+    fetchPlayerProfileMatches: async (
+      playerId: number,
+      page: number,
+      limit: number,
+    ) => {
       const offset = (page - 1) * limit;
       set({ isLoading: true, error: null });
       try {
-        const response = await profileApi.getProfileMatches(offset, limit);
+        const response = await playerApi.getPlayerProfileMatches(
+          playerId,
+          offset,
+          limit,
+        );
         set({
           playerMatches: mapProfileMatchesList(response.data.items),
           playerMatchesPagination: {

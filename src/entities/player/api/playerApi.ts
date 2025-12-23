@@ -24,4 +24,12 @@ export const playerApi = {
   unblockPlayer: (playerId: number) => {
     return $api.patch(`/users/${playerId}/unblock`);
   },
+
+  getPlayerProfileMatches: (
+    playerId: number,
+    offset: number,
+    limit: number,
+  ) => {
+    return $api.get(`/users/${playerId}/matches`, { offset, limit });
+  },
 };

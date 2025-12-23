@@ -100,14 +100,12 @@ export const useLiveStore = create<LiveState>()(
         if (error?.response?.status === 500) {
           try {
             const liveResponse = await liveApi.getLive();
-
             set({
               isLive: liveResponse.data.isLive,
               liveLink: liveResponse.data.webRTCUrl ?? '',
               isLoading: false,
             });
           } catch {
-            // если даже статус не получить — считаем, что лайв умер
             set({
               isLive: false,
               liveLink: '',
