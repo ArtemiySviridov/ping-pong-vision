@@ -1,0 +1,38 @@
+.sidebar {
+  height: 100%;
+  padding: 0 10px;
+  border-right: 1px solid var(--color-border);
+
+  &__header {
+    font-size: 20px;
+    padding: 20px 0;
+    font-family: 'Roboto-Medium', sans-serif;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+
+    &-label {
+      padding: 8px;
+      font-size: 12px;
+      font-family: 'Roboto-Medium', sans-serif;
+    }
+
+    &-nav {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      padding: 0 0 8px 0;
+      border-bottom: 1px solid var(--color-border);
+      font-family: 'Roboto-Regular', sans-serif;
+    }
+
+    &-logout {
+      margin-top: 8px;
+    }
+  }
+}

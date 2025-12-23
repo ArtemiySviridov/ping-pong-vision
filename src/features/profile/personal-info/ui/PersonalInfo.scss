@@ -1,0 +1,31 @@
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(10px, 20px);
+
+  &__avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: fluid(5px, 8px);
+
+    &__buttons {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: fluid(5px, 20px);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: fluid(5px, 10px);
+  }
+}

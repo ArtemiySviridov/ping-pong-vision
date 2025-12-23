@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: fluid(5px, 16px);
+  padding: 10px;
+  width: fit-content;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-white);
+      border-color: var(--color-border);
+    }
+
+    &:active {
+      border-color: var(--color-teracotta-06);
+    }
+  }
+}

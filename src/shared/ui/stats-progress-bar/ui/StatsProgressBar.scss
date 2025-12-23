@@ -1,0 +1,13 @@
+.stats-progress-bar {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(2px, 8px);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__progress-bars {
+    display: flex;
+  }
+}

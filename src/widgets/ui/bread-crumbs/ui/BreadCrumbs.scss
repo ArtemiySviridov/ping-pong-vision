@@ -1,0 +1,25 @@
+.bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+  flex-wrap: nowrap;
+  text-decoration: none;
+
+  &__item {
+    display: flex;
+    column-gap: 5px;
+    &__previous {
+      color: var(--color-gray);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__separator {
+    color: var(--color-gray);
+  }
+}

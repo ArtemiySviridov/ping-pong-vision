@@ -1,0 +1,35 @@
+.status {
+  width: fit-content;
+  border: none;
+  padding: 3px 15px;
+  border-radius: 20px;
+  &--active, &--win {
+    background-color: var(--color-green-light);
+    color: var(--color-green);
+  }
+
+  &--cancelled, &--lose {
+    background-color: var(--color-pink);
+    color: var(--color-red);
+  }
+
+  &--planned {
+    background-color: var(--color-orange-light);
+    color: var(--color-orange);
+  }
+
+  &--over {
+    background-color: var(--color-border);
+    color: var(--color-gray);
+  }
+
+  &--pending {
+    background-color: var(--color-orange-light);
+    color: var(--color-orange);
+  }
+
+  &--blocked {
+    background-color: var(--color-border);
+    color: var(--color-gray);
+  }
+}

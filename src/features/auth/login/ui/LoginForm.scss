@@ -1,0 +1,36 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  max-width: 520px;
+  width: 50%;
+  min-width: 300px;
+  padding: fluid(19px, 60px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-l);
+  row-gap: fluid(10px, 20px);
+
+  &__ppv-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: fluid(10px, 20px);
+  }
+
+  &__no-account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: fluid(5px, 10px);
+    flex-wrap: nowrap;
+    font-size: var(--text-sm);
+
+    :last-child {
+      color: var(--color-teracotta-08);
+    }
+  }
+}

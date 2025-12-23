@@ -1,0 +1,9 @@
+.tournament-calendar {
+  position: relative;
+
+  &__create-tournament-button {
+    position: absolute;
+    top: 2px;
+    z-index: 2;
+  }
+}

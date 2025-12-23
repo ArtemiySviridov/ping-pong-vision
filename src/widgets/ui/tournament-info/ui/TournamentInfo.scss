@@ -1,0 +1,42 @@
+.tournament-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(10px, 15px);
+
+  &__information {
+    display: flex;
+    flex-direction: row;
+    column-gap: fluid(20px, 60px);
+
+    &__winner {
+      display: flex;
+      flex-direction: column;
+      width: fluid(150px, 300px);
+      row-gap: fluid(10px, 15px);
+    }
+
+    &__players {
+      display: flex;
+      flex-direction: column;
+      row-gap: fluid(10px, 15px);
+      width: fluid(200px, 400px);
+      &__list-container {
+        padding: fluid(10px, 20px);
+        border-radius: var(--border-radius-m);
+        border: 1px solid var(--color-border);
+
+        &__title {
+          padding: fluid(8px, 10px);
+          border-bottom: 1px solid var(--color-border);
+        }
+
+        &__list {
+          display: flex;
+          flex-direction: column;
+          row-gap: fluid(10px, 20px);
+          padding-top: fluid(20px, 30px);
+        }
+      }
+    }
+  }
+}

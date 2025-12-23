@@ -1,0 +1,54 @@
+.sidebar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: var(--border-radius-m);
+
+  text-decoration: none;
+  color: inherit;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.1s ease,
+    stroke 0.2s ease;
+
+  &--default {
+    &:hover {
+      background-color: var(--color-teracotta-05);
+      color: var(--color-white);
+    }
+
+    &:focus {
+      outline: none;
+      background-color: var(--color-teracotta-06);
+      color: var(--color-white);
+    }
+  }
+
+  &--logout {
+    color: var(--color-red);
+    font-size: 14px;
+    width: fit-content;
+
+    &:hover {
+      background-color: var(--color-red);
+      color: var(--color-white);
+    }
+
+    &:focus {
+
+    }
+  }
+
+  &--active {
+    background-color: var(--color-teracotta-06);
+    color: var(--color-white);
+    font-weight: 500;
+
+    .sidebar-nav__icon {
+      color: var(--color-white);
+    }
+  }
+}

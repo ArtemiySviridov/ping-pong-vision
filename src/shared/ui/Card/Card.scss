@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-width: 240px;
+  padding: 1rem;
+  min-height: 125px;
+  border-radius: var(--border-radius-l);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+
+  &--stats-l {
+    justify-content: space-between;
+    .card__title {
+      font-size: var(--text-md);
+    }
+
+    .card__text {
+      color: var(--color-teracotta-08);
+    }
+  }
+
+  &--stats-s {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &--light-blue {
+    background-color: var(--color-blue-light);
+  }
+
+  &--turquoise {
+    background-color: var(--color-turquoise);
+  }
+
+  &--light-orange {
+    background-color: var(--color-orange-light);
+  }
+
+  &--pink {
+    background-color: var(--color-pink);
+  }
+}

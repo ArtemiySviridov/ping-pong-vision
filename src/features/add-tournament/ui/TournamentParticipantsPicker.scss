@@ -1,0 +1,52 @@
+.tournament-participants-picker {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(10px, 15px);
+
+  &__picker {
+    display: flex;
+    flex-direction: row;
+    column-gap: fluid(15px, 20px);
+  }
+
+  &__all-users, &__participants {
+    padding: fluid(15px,20px);
+    border-radius: var(--border-radius-m);
+    border: 1px solid var(--color-border);
+    width: 50%;
+
+    &__no-content-message {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      height: 300px;
+      justify-content: center;
+      margin-bottom: fluid(15px, 20px);
+    }
+
+    &__users-list, &__participants-list {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      row-gap: fluid(10px, 15px);
+      padding-right: 4px;
+      overflow-y: auto;
+      height: 300px;
+      margin-bottom: fluid(15px, 20px);
+    }
+
+    &__users-list {
+      &__user {
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+
+        &.selected {
+          background-color: var(--color-table-row);
+        }
+        &:hover {
+          background-color: var(--color-table-row);
+        }
+      }
+    }
+  }
+}

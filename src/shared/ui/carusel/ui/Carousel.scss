@@ -1,0 +1,13 @@
+.keen-slider {
+  width: 100%;
+}
+
+.carousel__slide {
+  max-width: 300px;
+  flex-shrink: 0;
+  min-width: 180px;
+  font-size: 24px;
+  background: var(--color-white);
+  border-radius: var(--border-radius-m);
+  user-select: none;
+}

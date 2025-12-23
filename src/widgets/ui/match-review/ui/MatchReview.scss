@@ -1,0 +1,31 @@
+.match-review {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(10px, 20px);
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date-time {
+    display: flex;
+    flex-direction: row;
+    column-gap: fluid(5px, 12px);
+    align-items: center;
+
+    &__date, &__time {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: fluid(2px, 8px);
+    }
+  }
+
+  &__score {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(10px, 20px);
+  }
+}

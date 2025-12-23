@@ -1,0 +1,60 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #232323;
+
+  --color-text: #344256;
+  --color-text-hover: #4A5C77;
+  --color-text-active: #1F2A38;
+
+  --color-teracotta-01: #F8FAFC;
+  --color-teracotta-02: #F2D6D0;
+  --color-teracotta-03: #E6BFB8;
+  --color-teracotta-04: #D9A79E;
+  --color-teracotta-05: #B13E31;
+  --color-teracotta-06: #9A3428;
+  --color-teracotta-07: #7D281E;
+  --color-teracotta-08: #5E1D15;
+  --color-teracotta-09: #4C1812;
+  --color-teracotta-10: #3C130F;
+
+  --color-blue: #006AA7;
+  --color-blue-light: #DCF2FE;
+  --color-turquoise: #C0FFF9;
+
+  --color-green: #21C45D;
+  --color-green-light: #CCF7DC;
+
+  --color-red: #B01212;
+
+  --color-pink: #FEEAED;
+
+  --color-orange: #F59F0A;
+
+  --color-orange-light: #FDEFB0;
+
+  --color-border: #d7dce6;
+  --color-gray: #777777;
+  --color-gray-light: #BFBFBF;
+
+  --color-table-row: #f1f1f1;
+
+
+
+  //border-radius
+  --border-radius-s: 10px;
+  --border-radius-m: 10px;
+  --border-radius-l: 24px;
+
+  //font-size
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 1rem;
+  --text-lg: 20px;
+  --text-xl: 1.5rem;
+
+  //font-weight
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
